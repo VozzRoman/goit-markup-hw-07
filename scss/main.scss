@@ -1,1 +1,24 @@
+@import "./base/reset.scss";
 @import "./utils/variabels";
+@import "./components/modal";
+@import "./components/buttons";
+@import "./components/header";
+@import "./components/main-home";
+@import "./components/main-portfolio";
+@import "./components/footer";
+
+// body ---------------------------
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: $primary-text-color;
+  background-color: $primary-background;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
