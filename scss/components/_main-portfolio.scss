@@ -1,11 +1,13 @@
 /* portfolio page */
 
 /* section 1 */
-
-.section__portfolio-list {
+.section {
+	&__portfolio-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+	}
+	
 }
 
 .section__portfolio-item {
@@ -32,8 +34,6 @@
   flex: 0 1 calc((100% - 60px)/3);
   margin-right: 30px;
 	margin-bottom: 30px;
-}
-.portfolio-cards__column{
 	&:nth-child(3n){
 	margin-right: 0;
 	}
@@ -41,6 +41,7 @@
 	margin-bottom: 0;
 	}
 }
+
 
 .portfolio-cards__img {
 	position: relative;
