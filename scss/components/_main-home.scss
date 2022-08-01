@@ -1,10 +1,9 @@
 
 //-----------Main Home----------------------//
 
-.section {
-  padding: 94px 0;
-}
+
 .section{
+	padding: 94px 0;
 	&:nth-child(4){
 		background-color: $section-bg-color-tow;
 	}
@@ -16,10 +15,6 @@
 
 /* section 1 */
 
-.section-one__container{
-	max-width: 696px;
-	margin: 0 auto;
-}
 .section-one {
 	max-width: 1600px;
 	margin: 0 auto;
@@ -28,8 +23,11 @@
 	background-size: cover;
 	padding:200px 0px;
   	background-color: $section-bg-color;
-}
-.section-one__title {
+	&__container{
+	max-width: 696px;
+	margin: 0 auto;
+	}
+	&__title {
   text-transform: uppercase;
   color: $seconadary-text-color;
   font-size: 44px;
@@ -39,28 +37,30 @@
   text-align: center;
   margin-bottom: 30px;
 }
+}
+
 
 /* section 2 */
 
 .title-hide {
   display: none;
 }
-.section-tow__list {
-  display: flex;
-  
-}
-.section-tow__item{
+.section-tow{
+			&__list {
+  		display: flex;
+	}
+			&__item{
 	margin-bottom:30px;
+	}
 }
 
 .section-tow__column {
   flex: 0 1 calc((100% - 90px)/4);
-}
-.section-tow__column{
-	&:not(:last-child){
+  &:not(:last-child){
 		margin-right: 30px;
 	}
 }
+
 .section-text {
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -78,20 +78,20 @@
 }
 
 /* section 3 */
-
-.section-three__list {
+.section-three{
+	&__list {
   display: flex;
+	}
 }
+
 .section-three__column {
 	position: relative;
   flex: 0 1 calc((100% - 60px)/3);
-}
-.section-three__column{
-	&:not(:last-child){
+  	&:not(:last-child){
 		margin-right: 30px;
 	}
-	
 }
+
 .section-three__label{
 	position: absolute;
 	bottom: 0;
@@ -125,19 +125,12 @@
 }
 
 /* section 4 */
-.card__title {
-  color: $primary-text-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0 0 10px 0;
+.section-foure{
+	&__list {
+  display: flex; 
 }
-.section-foure__list {
-  display: flex;
-  
 }
+
 .section-foure__column {
 	background-color: $primary-background;
   flex: 0 1 calc((100% - 90px)/4);
@@ -151,10 +144,28 @@
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001f;
   border-radius: 0px 0px 4px 4px;
-}
-.card__item {
+  	&__item {
   padding: 30px 0;
+	}
+	&__title {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 0 10px 0;
+	}
+	&__text {
+  color: $artical-color-text;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+	}
 }
+
 .card-social__list {
 	display: flex;
 	justify-content: center;
@@ -186,27 +197,22 @@
 	fill: currentColor;
 }
 
-.card__text {
-  color: $artical-color-text;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 16px;
-}
 
 /* section 5 */
-.section-company__list {
+.section-company{
+	&__list {
 	display: flex;
+	}
 }
+
 .section-company__item{
 	width: 170px;
-}
-.section-company__item {
 	&:not(:last-child){
 		margin-right: 30px;
 	}
+	
 }
+
 .section-company__link {
 	display: flex;
 	border: 1px solid #AFB1B8;

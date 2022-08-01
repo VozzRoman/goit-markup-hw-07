@@ -22,7 +22,20 @@
 	background-color: $primary-background;
 	border-radius: 4px;
 	padding: 40px 40px;
+	&__title {
+	color: $primary-text-color;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	letter-spacing: 0.03em;
+	display: block;
+	margin-bottom: 12px;
+	}
+	&__form {
+	display: block;
 	
+	}
 
 }
 .overlay{
@@ -67,31 +80,13 @@
 		border: 1px solid $hover-color;
 		outline: transparent;
 	}
-}
 
-.madal-close-button__icon{
+	&__icon{
 	fill: currentColor;
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-.modal__title {
-	color: $primary-text-color;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 1.15;
-	text-align: center;
-	letter-spacing: 0.03em;
-	display: block;
-	margin-bottom: 12px;
-
-
 }
-.modal__form {
-	display: block;
-	
-}
+
 .modal__form-field {
 	position: relative;
 	margin-bottom: 10px;

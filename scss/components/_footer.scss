@@ -5,6 +5,21 @@
 .footer {
   background-color: $section-bg-color;
   padding: 60px 0;
+  	&__container{
+		display: flex;
+		align-items: baseline;
+	}
+	&__column-adress{
+	flex: 0 0 230px;
+	margin-right: 70px;
+	}
+	&__column-social{
+	flex: 0 0 206px;
+	margin-right: 93px;
+	}
+	&__column-form{
+	flex: 0 1 100%;
+}
 }
 .footer-logo--color {
 	display: block;
@@ -37,19 +52,7 @@
 	color: $hover-color;
   }
 }
-.footer__column-adress{
-	flex: 0 0 230px;
-	margin-right: 70px;
-}
-.footer__column-social{
-	flex: 0 0 206px;
-	margin-right: 93px;
-}
 
-.footer__container{
-	display: flex;
-	align-items: baseline;
-}
 .footer-social__list{
 	display: flex;
 }
@@ -65,9 +68,7 @@
 .footer-social--icon-color{
 	fill: $seconadary-text-color;
 }
-.footer__column-form{
-	flex: 0 1 100%;
-}
+
 
 .footer__form {
 	display: flex;
@@ -111,10 +112,3 @@
 	margin-left: 10px;
 }
 
-.footer-column-link {
-	&:hover,
-	&:focus {
-		background-color:$hover-color;
-	}
-	
-}
