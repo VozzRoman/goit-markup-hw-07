@@ -70,7 +70,7 @@
 		color: $hover-color;
 	} 
 }
-.header-nav__link--active{
+.header-link--active{
 	color: $active-color;
 	&::after{
 	content: '';
@@ -83,18 +83,15 @@
 	border-radius: 2px;
 	}
 }
-.header-contact{
-	&__icon {
+
+.header-link--color {
+	color: $artical-color-text;
+}
+
+.header-link__icon{
 	display: inline-block;
 	margin-right: 10px;
 	fill: currentColor;
-	}
-	&__link--color {
-  color: $artical-color-text;
 }
-}
-
-
-
 
 
