@@ -46,12 +46,12 @@
 }
 }
 .overlay{
-	&.is-hidden {
-		.modal{
+	&.is-hidden + .modal{
 				transform: translate(-50%, -50%) scale(0.7);
 				opacity: 0;
 		}
-	}
+		
+	
 }
 
 

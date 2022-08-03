@@ -62,13 +62,12 @@
 .portfolio-cards__link{
 	&:hover,
 	&:focus {
-		.portfolio-cards__img {
-					 .portfolio-cards__hover{
-							transform: translateY(0);
-					}
+	.portfolio-cards__img > .portfolio-cards__hover{
+		transform: translateY(0);
+			}
+					 
 		}
 	}
-}
 
 .portfolio-cards__text{
 	color: $seconadary-text-color;

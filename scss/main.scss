@@ -1,5 +1,9 @@
+//_Partial-main
+
 @import "./base/reset.scss";
 @import "./utils/variabels";
+@import "./base/body";
+@import "./components/container";
 @import "./components/modal";
 @import "./components/buttons";
 @import "./components/header";
@@ -7,18 +11,5 @@
 @import "./components/main-portfolio";
 @import "./components/footer";
 
-// body ---------------------------
 
-body {
-  font-family: $main-font-family;
-  font-size: $text-size;
-  color: $primary-text-color;
-  background-color: $primary-background;
-}
 
-.container {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
